@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Supervisión - Unidad de Asuntos Internos</title>
+</head>
+<body>
+    <h1>UNIDAD DE ASUNTOS INTERNOS</h1>
+    <h2>DIRECCIÓN DE INVESTIGACIÓN Y SUPERVISIÓN</h2>
+
+    <form>
+        <p>En cumplimiento a los artículos 21 y 123 apartado B fracción XIII párrafo primero de la Constitución Política de los Estados Unidos Mexicanos; 1, 2, 3, 14 fracción V, 163 y 205 de la Ley de Seguridad del Estado de México en relación con el numeral 12 del Reglamento Interior de la Unidad de Asuntos Internos; se hace de su conocimiento por medio de la presente, siendo las:</p>
+
+        
+        <label for="fecha-hora">Selecciona una fecha y hora:</label>
+        <input type="datetime-local" id="fecha-hora" name="fecha-hora"> que el (la) integrante</p>
+        <!-- <p>Fecha y hora seleccionadas: <span id="fecha-hora-mostrada"></span></p> -->
+        
+        <script>
+          // Obtener el elemento de entrada de fecha y hora
+          var fechaHoraInput = document.getElementById("fecha-hora");
+        
+          // Obtener el elemento de salida para mostrar la fecha y hora seleccionadas
+          var fechaHoraMostrada = document.getElementById("fecha-hora-mostrada");
+        
+          // Escuchar el evento "change" en el campo de entrada de fecha y hora
+          fechaHoraInput.addEventListener("change", function() {
+            // Obtener la fecha y hora seleccionadas
+            var fechaHoraSeleccionada = fechaHoraInput.value;
+        
+            // Mostrar la fecha y hora seleccionadas en un formato legible
+            fechaHoraMostrada.textContent = new Date(fechaHoraSeleccionada).toLocaleString();
+          });
+        </script>   
+      
+        <!--<p>que el (la) integrante</p>-->
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" style="width: 100%;">
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" style="width: 100%;">
+        <label for="folio">Credencial Institucional con número de folio:</label>
+        <input type="text" id="folio" name="folio">
+
+        <p>adscrito(a) a la Dirección General de Investigación y Supervisión de la Unidad de Asuntos Internos sectorizado a la Secretaría de Seguridad, realizará una Supervisión, de la cual se tomará soporte videográfico y fotográfico que serán agregadas como anexos (ANEXO 1) de esta constancia; actuación que estará sujeta a los principios de Legalidad, Objetividad, Eficiencia, Profesionalismo, Honradez y Respeto a los Derechos Humanos reconocidos en la Constitución. Por lo que, yo:</p>
+
+        <label for="grado">Grado:</label>
+        <input type="text" id="grado" name="grado" style="width: 100%;">
+        <label for="nombre2">Nombre:</label>
+        <input type="text" id="nombre2" name="nombre2" style="width: 100%;">
+        <label for="cargo2">Cargo:</label>
+        <input type="text" id="cargo2" name="cargo2" style="width: 100%;">
+        <label for="clave">Clave de Servidor Público:</label>
+        <input type="text" id="clave" name="clave" style="width: 100%;">
+        <label for="rfc">
+            <form>
+                <p>En cumplimiento a los artículos 21 y 123 apartado B fracción XIII párrafo primero de la Constitución Política de los Estados Unidos Mexicanos; 1, 2, 3, 14 fracción V, 163 y 205 de la Ley de Seguridad del Estado de México en relación con el numeral 12 del Reglamento Interior de la Unidad de Asuntos Internos; se hace de su conocimiento por medio de la presente, siendo las:</p>
+            
+                <label for="hora">Hora: </label>
+                <input type="text" id="hora" name="hora">
+                <label for="minutos">Minutos: </label>
+                <input type="text" id="minutos" name="minutos">
+                <label for="dia">Día: </label>
+                <input type="text" id="dia" name="dia">
+                <label for="mes">Mes: </label>
+                <input type="text" id="mes" name="mes">
+                <label for="anio">Año: </label>
+                <input type="text" id="anio" name="anio">
+            
+                <p>que el (la) integrante</p>
+            
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" style="width: 100%;">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" style="width: 100%;">
+                <label for="folio">Credencial Institucional con número de folio:</label>
+                <input type="text" id="folio" name="folio">
+            
+                <p>adscrito(a) a la Dirección General de Investigación y Supervisión de la Unidad de Asuntos Internos sectorizado a la Secretaría de Seguridad, realizará una Supervisión, de la cual se tomará soporte videográfico y fotográfico que serán agregadas como anexos (ANEXO 1) de esta constancia; actuación que estará sujeta a los principios de Legalidad, Objetividad, Eficiencia, Profesionalismo, Honradez y Respeto a los Derechos Humanos reconocidos en la Constitución. Por lo que, yo:</p>
+            
+                <label for="grado">Grado:</label>
+                <input type="text" id="grado" name="grado" style="width: 100%;">
+                <label for="nombre2">Nombre:</label>
+                <input type="text" id="nombre2" name="nombre2" style="width: 100%;">
+                <label for="cargo2">Cargo:</label>
+                <input type="text" id="cargo2" name="cargo2" style="width: 100%;">
+                <label for="clave">Clave de Servidor Público:</label>
+                <input type="text" id="clave" name="clave" style="width: 100%;">
+                <label for="rfc">
+     <form>
+  <label for="municipio">Municipio:</label>
+  <input type="text" id="municipio" name="municipio"><br><br>
+  
+  <label for="lugar">Lugar de la Supervisión:</label>
+  <input type="text" id="lugar" name="lugar"><br><br>
+  
+  <label for="carretera">Carretera:</label>
+  <input type="text" id="carretera" name="carretera"><br><br>
+  
+  <label for="km">Km:</label>
+  <input type="text" id="km" name="km"><br><br>
+  
+  <label for="tramo">Tramo:</label>
+  <input type="text" id="tramo" name="tramo"><br><br>
+  
+  <label for="coordenadas">Coordenadas y/o Geolocalización:</label>
+  <input type="text" id="coordenadas" name="coordenadas"><br><br>
+  
+  <label for="jefe-region">Grado y Nombre del Jefe de Región:</label>
+  <input type="text" id="jefe-region" name="jefe-region"><br><br>
+  
+  <label for="telefono-region">Números Telefónicos:</label>
+  <input type="text" id="telefono-region" name="telefono-region"><br><br>
+  
+  <label for="jefe-agrupamiento">Grado y Nombre del Jefe de Agrupamiento:</label>
+  <input type="text" id="jefe-agrupamiento" name="jefe-agrupamiento"><br><br>
+  
+  <label for="telefono-agrupamiento">Números Telefónicos:</label>
+  <input type="text" id="telefono-agrupamiento" name="telefono-agrupamiento"><br><br>
+  
+  <label for="jefe-turno">Grado, Nombre y Cargo del Jefe de Turno:</label>
+  <input type="text" id="jefe-turno" name="jefe-turno"><br><br>
+  
+  <label for="telefono-turno">Números Telefónicos:</label>
+  <input type="text" id="telefono-turno" name="telefono-turno"><br><br>
+  
+  <label for="jefe-inmediato">Grado, Nombre y Cargo del (la) Jefe (a) Inmediato (a):</label>
+  <input type="text" id="jefe-inmediato" name="jefe-inmediato"><br><br>
+  
+  <label for="telefono-inmediato">Números Telefónicos:</label>
+  <input type="text" id="telefono-inmediato" name="telefono-inmediato"><br><br>
+  
+     <label for="conductor">Conductor:</label>
+        <input type="checkbox" id="conductor" name="servicio" value="conductor"><br><br>
+        
+        <label for="tripulante">Tripulante:</label>
+        <input type="checkbox" id="tripulante" name="servicio" value="tripulante"><br><br>
+        
+        <label for="antiguedad">Antigüedad en la adscripción:</label>
+        <input type="text" id="antiguedad" name="antiguedad"><br><br>
+        
+   
+<label>Documentos:</label><br>
+        
+        <input type="checkbox" id="credencial" name="documentos" value="credencial">
+        <label for="credencial">Credencial Institucional</label><br>
+        
+        <input type="checkbox" id="loc" name="documentos" value="loc">
+        <label for="loc">Licencia Oficial Colectiva (LOC)</label><br>
+        
+        <input type="checkbox" id="cartilla-derechos" name="documentos" value="cartilla-derechos">
+        <label for="cartilla-derechos">Cartilla de derechos</label><br>
+        
+        <input type="checkbox" id="cartilla-fuerza" name="documentos" value="cartilla-fuerza">
+        <label for="cartilla-fuerza">Cartilla para el Uso de la Fuerza</label><br>
+        
+        <input type="checkbox" id="licencia-conducir" name="documentos" value="licencia-conducir">
+        <label for="licencia-conducir">Licencia de conducir</label><br>
+        
+        <label for="vigencia-conducir">Vigencia de la Licencia de conducir:</label>
+        <input type="text" id="vigencia-conducir" name="vigencia-conducir"><br><br>
+        
+        <label for="escolaridad">Escolaridad (grado máximo de estudios):</label>
+        <input type="text" id="escolaridad" name="escolaridad"><br><br>
+        
+        <label for="observaciones">Observaciones:</label>
+        <textarea id="observaciones" name="observaciones"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+      </form>
+                  
