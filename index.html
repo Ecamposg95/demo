@@ -10,8 +10,7 @@
             font-size: 13px;
             text-align: justify;
         }
-       
-       
+        
         h1 {
             font-size: 20px;
             text-align: center;
@@ -90,12 +89,47 @@
         input[type="submit"]:hover {
             background-color: #444;
         }
+
+        .container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		h1 img {
+			font-size: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 0 auto;
+			max-width: 600px;
+			padding: 0px;
+			background-color: #fcfcfc;
+			color: #f5f3f3;
+			border-radius: 5px;
+		}
+
+		h2 img {
+			font-size: 15px;
+			text-align: center;
+			text-transform: uppercase;
+			margin: 0 auto;
+			max-width: 600px;
+			padding: 0px;
+			background-color: #ffffff;
+			color: #fff;
+			border-radius: 5px;
+		}
     </style>
     
 </head>
 <header>
-    <img src="https://uai.edomex.gob.mx/sites/uai.edomex.gob.mx/files/slider/3%20Lupita.jpg" alt="Logo 1" width="400" height="100">
-    <img src="logo2.png" alt="Logo 2" width="100" height="100">
+    <div class="container">
+		<h1><img src="https://uai.edomex.gob.mx/sites/uai.edomex.gob.mx/files/slider/3%20Lupita.jpg" alt="Logo 1" width="400" height="100"></h1>
+		<!--<h2><img src="mmmmm" alt="Logo 2" width="100" height="100"></h2>
+        -->
+        </div>    
+
 </header>
 <body>
     <h1>CONSTANCIA DE SUPERVISIÓN PARA PERSONAL CON TRABAJO DE CAMPO U OPERATIVO</h1>
@@ -159,20 +193,25 @@
         </section>
         <section id="seccion-2">
             
-                <label for="municipio">Municipio:</label>
-                <input type="text" id="municipio" name="municipio"><br><br>
-
-                <label for="lugar">Lugar de la Supervisión:</label>
-                <input type="text" id="lugar" name="lugar"><br><br>
-
-                <label for="carretera">Carretera:</label>
-                <input type="text" id="carretera" name="carretera"><br><br>
-
-                <label for="km">Km:</label>
-                <input type="text" id="km" name="km"><br><br>
-
-                <label for="tramo">Tramo:</label>
-                <input type="text" id="tramo" name="tramo"><br><br>
+            <table>
+                <tr>
+                  <th rowspan="2">Municipio</th>
+                  <th colspan="2">Lugar de la Supervisión</th>
+                  <th rowspan="2">Tramo:</th>
+                </tr>
+                <tr>
+                  <td>Carretera:</td>
+                  <td>Km:</td>
+                </tr>
+                <tr>
+                  <td rowspan="2"><input type="text" id="municipio" name="municipio"></td>
+                  <td><input type="text" id="carretera" name="carretera"></td>
+                  <td><input type="text" id="km" name="km"></td>
+                  <td><input type="text" id="tramo" name="tramo"></td>
+                </tr>
+              </table>
+              
+              
         </section>
   <label for="coordenadas">Coordenadas y/o Geolocalización:</label>
   <input type="text" id="coordenadas" name="coordenadas"><br><br>
@@ -239,4 +278,4 @@
         
         <input type="submit" value="Enviar">
       </form>
-                           
+                  
