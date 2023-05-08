@@ -3,44 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Supervisión - Unidad de Asuntos Internos</title>
+    <title>CONSTANCIA DE SUPERVISIÓN PARA PERSONAL CON TRABAJO DE CAMPO U OPERATIVO - Unidad de Asuntos Internos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            text-align: justify;
+        }
+        
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #070606;
+            color: #fff;
+            border-radius: 5px;
+            
+        }
+        
+        h2 {
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #201e1e;
+            color: #fff;
+            border-radius: 5px;
+        }
+        h3 {
+            font-size: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #070606;
+            color: #fff;
+            border-radius: 5px;
+            
+        }
+            
+        form {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            border: 2px solid #111a44;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+    
 </head>
+<header>
+    <img src="https://uai.edomex.gob.mx/sites/uai.edomex.gob.mx/files/slider/3%20Lupita.jpg" alt="Logo 1" width="400" height="100">
+    <img src="logo2.png" alt="Logo 2" width="100" height="100">
+</header>
 <body>
-    <h1>UNIDAD DE ASUNTOS INTERNOS</h1>
-    <h2>DIRECCIÓN DE INVESTIGACIÓN Y SUPERVISIÓN</h2>
+    <h1>CONSTANCIA DE SUPERVISIÓN PARA PERSONAL CON TRABAJO DE CAMPO U OPERATIVO</h1>
+    <h2>UNIDAD DE ASUNTOS INTERNOS - DIRECCIÓN DE INVESTIGACIÓN Y SUPERVISIÓN</h2>
 
     <form>
-        <p>En cumplimiento a los artículos 21 y 123 apartado B fracción XIII párrafo primero de la Constitución Política de los Estados Unidos Mexicanos; 1, 2, 3, 14 fracción V, 163 y 205 de la Ley de Seguridad del Estado de México en relación con el numeral 12 del Reglamento Interior de la Unidad de Asuntos Internos; se hace de su conocimiento por medio de la presente, siendo las:</p>
+        <section id="seccion-1">
+        <p>En cumplimiento a los artículos 21 y 123 apartado B fracción XIII párrafo primero de la Constitución Política de los Estados Unidos Mexicanos; 1, 2, 3, 14 
+            fracción V, 163 y 205 de la Ley de Seguridad del Estado de México en relación con el numeral 12 del Reglamento Interior de 
+            la Unidad de Asuntos Internos; se hace de su 
+            conocimiento por medio de la presente, siendo las:</p>
 
         
-        <label for="fecha-hora">Selecciona una fecha y hora:</label>
-        <input type="datetime-local" id="fecha-hora" name="fecha-hora"> que el (la) integrante</p>
-        <!-- <p>Fecha y hora seleccionadas: <span id="fecha-hora-mostrada"></span></p> -->
-        
-        <script>
-          // Obtener el elemento de entrada de fecha y hora
-          var fechaHoraInput = document.getElementById("fecha-hora");
-        
-          // Obtener el elemento de salida para mostrar la fecha y hora seleccionadas
-          var fechaHoraMostrada = document.getElementById("fecha-hora-mostrada");
-        
-          // Escuchar el evento "change" en el campo de entrada de fecha y hora
-          fechaHoraInput.addEventListener("change", function() {
-            // Obtener la fecha y hora seleccionadas
-            var fechaHoraSeleccionada = fechaHoraInput.value;
-        
-            // Mostrar la fecha y hora seleccionadas en un formato legible
-            fechaHoraMostrada.textContent = new Date(fechaHoraSeleccionada).toLocaleString();
-          });
-        </script>   
+            <!-- <label for="fecha-hora">Selecciona una fecha y hora:</label>-->
+            <input type="datetime-local" id="fecha-hora" name="fecha-hora"> que el (la) integrante</p>
+            <!-- <p>Fecha y hora seleccionadas: <span id="fecha-hora-mostrada"></span></p> -->
+            
+            <script>
+            // Obtener el elemento de entrada de fecha y hora
+            var fechaHoraInput = document.getElementById("fecha-hora");
+            
+            // Obtener el elemento de salida para mostrar la fecha y hora seleccionadas
+            var fechaHoraMostrada = document.getElementById("fecha-hora-mostrada");
+            
+            // Escuchar el evento "change" en el campo de entrada de fecha y hora
+            fechaHoraInput.addEventListener("change", function() {
+                // Obtener la fecha y hora seleccionadas
+                var fechaHoraSeleccionada = fechaHoraInput.value;
+            
+                // Mostrar la fecha y hora seleccionadas en un formato legible
+                fechaHoraMostrada.textContent = new Date(fechaHoraSeleccionada).toLocaleString();
+            });
+            </script>   
       
-        <!--<p>que el (la) integrante</p>-->
-
+       
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" style="width: 100%;">
         <label for="cargo">Cargo:</label>
         <input type="text" id="cargo" name="cargo" style="width: 100%;">
-        <label for="folio">Credencial Institucional con número de folio:</label>
+        que se identifica con Credencial Institucional con número de 
+        <label for="folio">Folio:</label>
         <input type="text" id="folio" name="folio">
 
         <p>adscrito(a) a la Dirección General de Investigación y Supervisión de la Unidad de Asuntos Internos sectorizado a la Secretaría de Seguridad, realizará una Supervisión, de la cual se tomará soporte videográfico y fotográfico que serán agregadas como anexos (ANEXO 1) de esta constancia; actuación que estará sujeta a los principios de Legalidad, Objetividad, Eficiencia, Profesionalismo, Honradez y Respeto a los Derechos Humanos reconocidos en la Constitución. Por lo que, yo:</p>
@@ -53,57 +148,31 @@
         <input type="text" id="cargo2" name="cargo2" style="width: 100%;">
         <label for="clave">Clave de Servidor Público:</label>
         <input type="text" id="clave" name="clave" style="width: 100%;">
-        <label for="rfc">
-            <form>
-                <p>En cumplimiento a los artículos 21 y 123 apartado B fracción XIII párrafo primero de la Constitución Política de los Estados Unidos Mexicanos; 1, 2, 3, 14 fracción V, 163 y 205 de la Ley de Seguridad del Estado de México en relación con el numeral 12 del Reglamento Interior de la Unidad de Asuntos Internos; se hace de su conocimiento por medio de la presente, siendo las:</p>
+        <label for="rfc">RFC:</label>
+        <input type="text" id="rfc" name="rfc" style="width: 100%;">
+        
+       
+        <label for="firma">FIRMA</label>
+        <input type="text" id="firma" name="firma" style="width: 100%;">
+   
+        </section>
+        <section id="seccion-2">
             
-                <label for="hora">Hora: </label>
-                <input type="text" id="hora" name="hora">
-                <label for="minutos">Minutos: </label>
-                <input type="text" id="minutos" name="minutos">
-                <label for="dia">Día: </label>
-                <input type="text" id="dia" name="dia">
-                <label for="mes">Mes: </label>
-                <input type="text" id="mes" name="mes">
-                <label for="anio">Año: </label>
-                <input type="text" id="anio" name="anio">
-            
-                <p>que el (la) integrante</p>
-            
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" style="width: 100%;">
-                <label for="cargo">Cargo:</label>
-                <input type="text" id="cargo" name="cargo" style="width: 100%;">
-                <label for="folio">Credencial Institucional con número de folio:</label>
-                <input type="text" id="folio" name="folio">
-            
-                <p>adscrito(a) a la Dirección General de Investigación y Supervisión de la Unidad de Asuntos Internos sectorizado a la Secretaría de Seguridad, realizará una Supervisión, de la cual se tomará soporte videográfico y fotográfico que serán agregadas como anexos (ANEXO 1) de esta constancia; actuación que estará sujeta a los principios de Legalidad, Objetividad, Eficiencia, Profesionalismo, Honradez y Respeto a los Derechos Humanos reconocidos en la Constitución. Por lo que, yo:</p>
-            
-                <label for="grado">Grado:</label>
-                <input type="text" id="grado" name="grado" style="width: 100%;">
-                <label for="nombre2">Nombre:</label>
-                <input type="text" id="nombre2" name="nombre2" style="width: 100%;">
-                <label for="cargo2">Cargo:</label>
-                <input type="text" id="cargo2" name="cargo2" style="width: 100%;">
-                <label for="clave">Clave de Servidor Público:</label>
-                <input type="text" id="clave" name="clave" style="width: 100%;">
-                <label for="rfc">
-     <form>
-  <label for="municipio">Municipio:</label>
-  <input type="text" id="municipio" name="municipio"><br><br>
-  
-  <label for="lugar">Lugar de la Supervisión:</label>
-  <input type="text" id="lugar" name="lugar"><br><br>
-  
-  <label for="carretera">Carretera:</label>
-  <input type="text" id="carretera" name="carretera"><br><br>
-  
-  <label for="km">Km:</label>
-  <input type="text" id="km" name="km"><br><br>
-  
-  <label for="tramo">Tramo:</label>
-  <input type="text" id="tramo" name="tramo"><br><br>
-  
+                <label for="municipio">Municipio:</label>
+                <input type="text" id="municipio" name="municipio"><br><br>
+
+                <label for="lugar">Lugar de la Supervisión:</label>
+                <input type="text" id="lugar" name="lugar"><br><br>
+
+                <label for="carretera">Carretera:</label>
+                <input type="text" id="carretera" name="carretera"><br><br>
+
+                <label for="km">Km:</label>
+                <input type="text" id="km" name="km"><br><br>
+
+                <label for="tramo">Tramo:</label>
+                <input type="text" id="tramo" name="tramo"><br><br>
+        </section>
   <label for="coordenadas">Coordenadas y/o Geolocalización:</label>
   <input type="text" id="coordenadas" name="coordenadas"><br><br>
   
@@ -169,4 +238,4 @@
         
         <input type="submit" value="Enviar">
       </form>
-                  
+                           
